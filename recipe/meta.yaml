@@ -1,0 +1,44 @@
+package:
+  name: vybind11
+  version: 0.1.0
+
+source:
+  path: ../
+
+
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake >=3.1
+    - python >= 3.6
+    - numpy
+    - xtl
+    - xtensor
+    - xtensor-python
+    
+  run:
+    - numpy
+    - python >= 3.6
+test:
+  commands:
+    - test -d ${PREFIX}/include/vybind11           # [unix]
+    - test -f ${PREFIX}/include/vybind11/vybind11.hpp # [unix]
+    - if exist %LIBRARY_PREFIX%\include\vybind11\vybind11.hpp (exit 0) else (exit 1)  # [win]
+
+about:
+  home:  https://github.com/DerThorsten/vybind11
+  license: MIT
+  license_family: MIT
+  
+  summary: 'vybind11 is used to export vigra MultiArray(View)s from/to python via pybind11'
+  description: 'vybind11 is used to export vigra MultiArray(View)s from/to python via pybind11'
+  documentation_url: https://readthedocs.org/projects/vybind11/
+  dev_url: https://github.com/DerThorsten/vybind11
+
+extra:
+  recipe-maintainers:
+    - Thorsten Beier
+

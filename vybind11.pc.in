@@ -1,0 +1,8 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/include
+
+Name: vybind11
+Description: vybind11 is used to export vigra MultiArray(View)s from/to python via pybind11
+Version: @vybind11_VERSION@
+Cflags: -I${includedir}

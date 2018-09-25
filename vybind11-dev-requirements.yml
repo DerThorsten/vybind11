@@ -1,0 +1,14 @@
+name: vybind11-dev-requirements
+
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - cmake >=3.1
+  - sphinx 
+  - breathe
+  - vigra
+  - python >=3.6
+  - numpy
+  - pybind11
+  

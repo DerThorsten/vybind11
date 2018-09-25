@@ -1,0 +1,17 @@
+#pragma once
+#ifndef VYBIND11_VYBIND11_CONFIG_HPP
+#define VYBIND11_VYBIND11_CONFIG_HPP
+
+
+
+#define VYBIND11_VERSION_MAJOR 0
+#define VYBIND11_VERSION_MINOR 1
+#define VYBIND11_VERSION_PATCH 0
+
+namespace vybind11 {
+
+
+} // end namespace vybind11
+
+
+#endif // VYBIND11_VYBIND11_CONFIG_HPP
